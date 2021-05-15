@@ -171,8 +171,8 @@ class EventsController extends AbstractController
      */
     public function details($id): Response
     {
-       $events = $this->getDoctrine()->getRepository('App:Event')->find($id);
-       return $this->render('events/details.html.twig', array('events' => $events));
+        $events = $this->getDoctrine()->getRepository('App:Event')->find($id);
+        return $this->render('events/details.html.twig', array('events' => $events));
     }
 
 

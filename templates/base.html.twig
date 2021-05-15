@@ -8,11 +8,12 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
         <style>
         body {
-            background: rgb(249,39,42);
-            background: linear-gradient(149deg, rgba(249,39,42,1) 0%, rgba(215,211,202,1) 100%);
-        }
+         background: rgb(220,54,69);
+background: linear-gradient(177deg, rgba(220,54,69,1) 0%, rgba(215,211,202,1) 59%);
+         }
         .btn-add {
             background-color: #d81f1d;
             font-weight: 700;
@@ -28,9 +29,13 @@
         }
 
 
-        h3 {
+        h3,h1 {
             text-shadow: 3px 3px 14px rgba(150, 150, 150, 0.5);
             font-weight: 700;
+        }
+
+        h1 {
+            font-size: 4rem;
         }
 
         form {
@@ -47,14 +52,19 @@
 
         .card-img-top {
                 margin: 0 auto;
-                height: 25rem; 
-                object-fit:contain;
+                height: 20rem; 
+                object-fit:cover;
                 
             }
+        
+        .navbar {
+            background-color: black;
+        }
+
         </style>
     </head>
     <body>
-           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+           <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand text-danger" href="/">EventGuru</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

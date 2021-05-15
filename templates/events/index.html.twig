@@ -4,9 +4,9 @@
 <img src="https://www.wien.info/resource/image/289352/Header/1600/440/7ecd5c4b84fcc00e21080edcdc7c2c6c/dJ/1-blick-auf-die-ringstrasse-40707.jpg" class="card-img-top shadow" alt="...">
 
 <div class="px-4 my-5 text-center hero-text">
-    <h1 class="fw-bold text-white">WELCOME at EventGuru</h1>
+    <h1 class=" text-white">WELCOME at EventGuru,</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4 text-white">...to the city of Vienna's official online travel guide. It contains all the information you need for your perfect vacation in Vienna. There's good news from Vienna: museums, zoos and shops are open again and can be visited. On May 19, hotels and restaurants finally open again. So soon nothing will stand in the way of a trip to Vienna. We are already looking forward to seeing you.</p>
+      <p class="lead mb-4 text-white">...at the biggest Vienna's official online travel guide. It contains all the information you need for your perfect vacation in Vienna. There's good news from Vienna: museums, zoos and shops are open again and can be visited. On May 19, hotels and restaurants finally open again. So soon nothing will stand in the way of a trip to Vienna. We are already looking forward to seeing you.</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
       <a class="nav-link" href="/create"><button type="button" class="shadow btn btn-add btn-lg px-4 gap-3">Add event</button></a>
       </div>
@@ -21,11 +21,13 @@
                     <img class="card-img-top" src="{{event.img}}" alt="Card image cap" style="object-fit: cover; height: 18rem;">
                     <div class="card-body">
                         <h3 class="card-title text-center text-danger fw-bold">{{ event.name }}</h3>
-                        <p class="card-text">{{ event.description }}</p>                        
+                        <p class="card-text text-center">{{ event.description }}</p>                        
                     </div>
                     <hr>
-                    <div class="text-center">
-                        <p class="text-secondary px-2">{{event.address}}</p>
+                    <div class="text-center text-secondary">
+                    <p class="card-text "><i class="fas fa-map-marker-alt"></i> {{event.address}} </p>
+                    <p class=" px-2"><i class="far fa-calendar-alt"></i> {{ event.dateAndStart|date('l d.m.Y, h:i') }}</p>
+                    <p class="card-text "><i class="fas fa-users"></i> {{event.capacity}} </p>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-around mb-2">
